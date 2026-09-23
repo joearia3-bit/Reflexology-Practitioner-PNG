@@ -1,0 +1,1008 @@
+/* =========================================
+   JOSEPH ARIA REFLEXOLOGY
+   PHASE 1 - SIMPLE BEGINNER CSS
+   ========================================= */
+
+
+/* =========================================
+   1. BASIC SETTINGS
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #26352e;
+
+    background-color: #ffffff;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   2. COLOURS
+   ========================================= */
+
+:root {
+
+    --green: #1d4d3b;
+
+    --light-green: #e9f0ea;
+
+    --cream: #f7f1e6;
+
+    --gold: #c9a45c;
+
+    --earth: #9a7450;
+
+    --dark: #26352e;
+
+    --grey: #66736c;
+
+    --white: #ffffff;
+
+    --border: #dfe5df;
+
+}
+
+
+/* =========================================
+   3. GENERAL ELEMENTS
+   ========================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--grey);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--green);
+
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 42px;
+
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+
+/* =========================================
+   4. HEADER
+   ========================================= */
+
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background-color: var(--white);
+
+    border-bottom: 1px solid var(--border);
+
+    padding: 12px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo h2 {
+
+    margin: 0;
+
+    font-size: 21px;
+
+    color: var(--green);
+}
+
+.logo p {
+
+    margin: 0;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: var(--earth);
+
+    font-weight: bold;
+}
+
+
+/* MENU BUTTON */
+
+#menuButton {
+
+    background: none;
+
+    border: none;
+
+    font-size: 28px;
+
+    color: var(--green);
+
+    cursor: pointer;
+}
+
+
+/* NAVIGATION */
+
+nav {
+
+    display: none;
+
+    position: absolute;
+
+    top: 68px;
+
+    left: 0;
+
+    width: 100%;
+
+    background-color: white;
+
+    padding: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+nav.show {
+
+    display: block;
+}
+
+nav a {
+
+    display: block;
+
+    padding: 12px 0;
+
+    color: var(--green);
+
+    font-weight: bold;
+}
+
+nav a:hover {
+
+    color: var(--gold);
+}
+
+
+/* BOOK BUTTON */
+
+.book-button {
+
+    background-color: var(--green);
+
+    color: white !important;
+
+    padding: 12px 18px !important;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================
+   5. HERO
+   ========================================= */
+
+.hero {
+
+    background-color: var(--cream);
+
+    padding: 50px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+
+    order: 1;
+}
+
+.small-heading {
+
+    color: var(--earth);
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.hero h1 {
+
+    font-size: 44px;
+
+    color: var(--green);
+
+    margin-bottom: 20px;
+}
+
+
+.hero-text {
+
+    font-size: 18px;
+
+    max-width: 600px;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+.primary-button,
+.secondary-button {
+
+    display: inline-block;
+
+    padding: 14px 22px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+.primary-button {
+
+    background-color: var(--green);
+
+    color: white;
+}
+
+
+.secondary-button {
+
+    background-color: white;
+
+    color: var(--green);
+
+    border: 1px solid var(--green);
+}
+
+
+.primary-button:hover {
+
+    background-color: #143a2d;
+}
+
+
+.secondary-button:hover {
+
+    background-color: var(--light-green);
+}
+
+
+.trust {
+
+    font-size: 13px;
+
+    color: var(--green);
+
+    margin-top: 25px;
+
+    font-weight: bold;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+
+    order: 2;
+
+    margin-top: 35px;
+}
+
+
+.image-placeholder {
+
+    min-height: 330px;
+
+    border-radius: 25px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #dce8de,
+            #eee5d5
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #63766a;
+
+    border: 1px dashed #9daf9f;
+}
+
+
+/* =========================================
+   6. GENERAL SECTIONS
+   ========================================= */
+
+.section {
+
+    padding: 65px 20px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.section-heading {
+
+    margin-bottom: 35px;
+
+    max-width: 700px;
+}
+
+
+/* =========================================
+   7. INTRODUCTION
+   ========================================= */
+
+.introduction {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+.text-link {
+
+    color: var(--green);
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   8. SERVICES
+   ========================================= */
+
+.services {
+
+    background-color: #f4f6f1;
+
+    max-width: none;
+}
+
+
+.service-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.service-card {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid var(--border);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+.service-card span {
+
+    color: var(--gold);
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+.service-card h3 {
+
+    margin-top: 12px;
+}
+
+
+.service-card a {
+
+    color: var(--green);
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   9. WELLNESS
+   ========================================= */
+
+.wellness {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 35px;
+}
+
+
+.wellness-image {
+
+    min-height: 350px;
+}
+
+
+.wellness-content ul {
+
+    padding-left: 20px;
+
+    color: var(--grey);
+}
+
+
+.wellness-content li {
+
+    margin-bottom: 8px;
+}
+
+
+/* IMPORTANT NOTICE */
+
+.notice {
+
+    background-color: #fff7e5;
+
+    border-left: 5px solid var(--gold);
+
+    padding: 18px;
+
+    margin: 25px 0;
+
+    border-radius: 8px;
+}
+
+
+.notice strong {
+
+    color: var(--green);
+}
+
+
+/* =========================================
+   10. FEATURES
+   ========================================= */
+
+.feature-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+}
+
+
+.feature {
+
+    border-top: 1px solid var(--border);
+
+    padding-top: 20px;
+}
+
+
+/* =========================================
+   11. JOURNEY
+   ========================================= */
+
+.journey {
+
+    background-color: var(--green);
+
+    padding: 70px 20px;
+
+    color: white;
+}
+
+
+.journey h2 {
+
+    color: white;
+
+    max-width: 750px;
+}
+
+
+.journey p {
+
+    color: #e0ebe4;
+
+    max-width: 700px;
+}
+
+
+/* =========================================
+   12. PHILOSOPHY
+   ========================================= */
+
+.philosophy {
+
+    text-align: center;
+}
+
+
+.philosophy p {
+
+    max-width: 700px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+
+.values {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+.values span {
+
+    background-color: var(--light-green);
+
+    color: var(--green);
+
+    padding: 9px 16px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   13. BOOKING CTA
+   ========================================= */
+
+.booking-cta {
+
+    background-color: var(--cream);
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+
+.booking-cta p {
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   14. WHATSAPP
+   ========================================= */
+
+.whatsapp {
+
+    position: fixed;
+
+    right: 18px;
+
+    bottom: 18px;
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    background-color: #168c4b;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    z-index: 2000;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================
+   15. FOOTER
+   ========================================= */
+
+footer {
+
+    background-color: #132e24;
+
+    color: white;
+
+    padding: 50px 20px;
+
+    text-align: center;
+}
+
+
+footer h3 {
+
+    color: white;
+}
+
+
+footer p {
+
+    color: #c8d5ce;
+}
+
+
+.footer-links {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin: 25px 0;
+}
+
+
+.footer-links a {
+
+    color: #dce8e1;
+}
+
+
+.footer-links a:hover {
+
+    color: var(--gold);
+}
+
+
+.copyright {
+
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    padding-top: 20px;
+
+    margin-top: 25px;
+}
+
+
+.disclaimer {
+
+    font-size: 12px;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+/* =========================================
+   16. TABLET
+   ========================================= */
+
+@media (width >= 700px) {
+
+    .hero {
+
+        padding: 70px 50px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 55px;
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: row;
+    }
+
+
+    .introduction {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 60px;
+
+        align-items: center;
+    }
+
+
+    .service-grid {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .feature-grid {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .footer-links {
+
+        grid-template-columns:
+            repeat(4, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   17. DESKTOP
+   ========================================= */
+
+@media (width >= 1000px) {
+
+    header {
+
+        padding: 15px 5%;
+    }
+
+
+    #menuButton {
+
+        display: none;
+    }
+
+
+    nav {
+
+        display: flex;
+
+        position: static;
+
+        width: auto;
+
+        padding: 0;
+
+        box-shadow: none;
+
+        align-items: center;
+
+        gap: 20px;
+    }
+
+
+    nav a {
+
+        padding: 5px 0;
+    }
+
+
+    .book-button {
+
+        padding: 10px 18px !important;
+
+        margin-top: 0;
+    }
+
+
+    .hero {
+
+        display: grid;
+
+        grid-template-columns:
+            1fr 1fr;
+
+        align-items: center;
+
+        gap: 60px;
+
+        min-height: 700px;
+
+        padding: 80px 7%;
+    }
+
+
+    .hero-image {
+
+        order: 2;
+
+        margin-top: 0;
+    }
+
+
+    .hero-content {
+
+        order: 1;
+    }
+
+
+    .hero h1 {
+
+        font-size: 64px;
+    }
+
+
+    .service-grid {
+
+        grid-template-columns:
+            repeat(4, 1fr);
+    }
+
+
+    .wellness {
+
+        display: grid;
+
+        grid-template-columns:
+            1fr 1fr;
+
+        align-items: center;
+
+        gap: 60px;
+    }
+
+
+    .feature-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+
+    .section {
+
+        padding-top: 90px;
+
+        padding-bottom: 90px;
+    }
+
+
+    .journey {
+
+        padding: 100px 7%;
+    }
+
+}
+
+
+/* =========================================
+   18. ACCESSIBILITY
+   ========================================= */
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline: 3px solid var(--gold);
+
+    outline-offset: 3px;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior: auto;
+    }
+
+}

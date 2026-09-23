@@ -1,115 +1,327 @@
-/* =========================
-   JOSEPH ARIA REFLEXOLOGY
-   LIGHT BLUE WELLNESS THEME
-========================= */
+/* =====================================================
+   REFLEXOLOGY PRACTITIONER PNG
+   MAIN WEBSITE STYLES
+   Light Blue Wellness Theme
+===================================================== */
 
 
-/* =========================
+/* =====================================================
    BASIC RESET
-========================= */
+===================================================== */
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.7;
-  background: #ffffff;
-  color: #29404f;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #365563;
+    line-height: 1.7;
 }
 
 
-/* =========================
+/* =====================================================
    CONTAINER
-========================= */
+===================================================== */
 
 .container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 
-/* =========================
+/* =====================================================
    HEADER
-========================= */
+===================================================== */
 
-.header {
-  background: #dff3fa;
-  color: #24566b;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
-  box-shadow:
-    0 2px 12px rgba(80, 150, 175, 0.15);
-}
-
-.nav-container {
-  min-height: 72px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+header {
+    background: #dff3fa;
+    border-bottom: 1px solid #b9dce8;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 
-/* =========================
+header .container {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+/* =====================================================
    LOGO
-========================= */
+===================================================== */
 
 .logo {
-  color: #24566b;
-  text-decoration: none;
-
-  font-size: 18px;
-  font-weight: bold;
-
-  letter-spacing: 1px;
+    line-height: 1.1;
 }
+
+
+.logo h2 {
+    color: #24566b;
+    font-size: 1.35rem;
+    margin-bottom: 3px;
+}
+
 
 .logo span {
-  display: block;
-
-  font-size: 11px;
-  letter-spacing: 3px;
-
-  margin-top: 2px;
+    color: #5baecb;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 
-/* =========================
+/* =====================================================
    NAVIGATION
-========================= */
+===================================================== */
 
 nav {
-  display: flex;
-  align-items: center;
-  gap: 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
+
 
 nav a {
-  color: #24566b;
-
-  text-decoration: none;
-
-  font-size: 14px;
-  font-weight: 600;
+    color: #24566b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
 }
+
 
 nav a:hover {
-  color: #4b9fbd;
+    color: #5baecb;
 }
 
-.menu-button {
-  display: none;
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #dff3fa,
+        #f8fcfd
+    );
+
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+.hero h1 {
+    max-width: 850px;
+    margin: 15px auto 20px;
+    color: #24566b;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+}
+
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    font-size: 1.1rem;
+    color: #54727e;
+}
+
+
+/* =====================================================
+   EYEBROW TEXT
+===================================================== */
+
+.eyebrow {
+    color: #5baecb;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+section {
+    padding: 80px 0;
+}
+
+
+section h2 {
+    color: #24566b;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 25px;
+}
+
+
+section p {
+    max-width: 850px;
+    margin-bottom: 18px;
+}
+
+
+.light-section {
+    background: #eef9fc;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.btn {
+    display: inline-block;
+
+    background: #5baecb;
+    color: #ffffff;
+
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border: 2px solid #5baecb;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.btn:hover {
+    background: #24566b;
+    border-color: #24566b;
+    transform: translateY(-2px);
+}
+
+
+.secondary-btn {
+    background: transparent;
+    color: #24566b;
+    border-color: #7fc3da;
+}
+
+
+.secondary-btn:hover {
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   HERO BUTTONS
+===================================================== */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+
+.service-card {
+    background: #ffffff;
+
+    border: 1px solid #c8e5ee;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 5px 20px rgba(91, 174, 203, 0.08);
+
+    transition: 0.3s ease;
+}
+
+
+.service-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(91, 174, 203, 0.15);
+}
+
+
+.service-card h3 {
+    color: #24566b;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+
+.service-card p {
+    color: #5c747d;
+}
+
+
+/* =====================================================
+   CONTACT AREA
+===================================================== */
+
+#contact {
+    background: #f8fcfd;
+}
+
+
+#contact .btn {
+    margin-top: 10px;
+}
+
+
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+
+form {
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+
+form label {
+    display: block;
+
+     display: none;
 
   border: none;
   background: transparent;

@@ -1,5 +1,5 @@
 /* =====================================================
-   REFLEXOLOGY PRACTITIONER PNG
+   JOSEPH ARIA REFLEXOLOGY
    WEBSITE JAVASCRIPT
 ===================================================== */
 
@@ -10,7 +10,6 @@
 
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector("nav");
-
 
 if (menuButton && navigation) {
 
@@ -23,13 +22,11 @@ if (menuButton && navigation) {
 }
 
 
-
 /* =====================================================
    CLOSE MOBILE MENU AFTER CLICKING A LINK
 ===================================================== */
 
 const navLinks = document.querySelectorAll("nav a");
-
 
 navLinks.forEach(function (link) {
 
@@ -46,39 +43,32 @@ navLinks.forEach(function (link) {
 });
 
 
-
 /* =====================================================
    CONTACT FORM
 ===================================================== */
 
 const contactForm = document.getElementById("contactForm");
-
+const formMessage = document.getElementById("formMessage");
 
 if (contactForm) {
 
-    contactForm.addEventListener(
-        "submit",
-        function (event) {
+    contactForm.addEventListener("submit", function (event) {
 
-            event.preventDefault();
+        event.preventDefault();
 
+        if (formMessage) {
 
-            alert(
-                "Thank you for contacting " +
-                "Reflexology Practitioner PNG. " +
-                "Your enquiry has been received. " +
-                "You can also contact Joseph Aria directly " +
-                "through WhatsApp."
-            );
-
-
-            contactForm.reset();
+            formMessage.textContent =
+                "Thank you for your enquiry. " +
+                "Joseph Aria will respond to you as soon as possible.";
 
         }
-    );
+
+        contactForm.reset();
+
+    });
 
 }
-
 
 
 /* =====================================================
@@ -87,5 +77,11 @@ if (contactForm) {
 
 const year = new Date().getFullYear();
 
-const footerYear = document.querySelector(
-    "footer p
+const footerYear = document.querySelector(".copyright");
+
+if (footerYear) {
+
+    footerYear.textContent =
+        "© " + year + " Joseph Aria Reflexology. All rights reserved.";
+
+}

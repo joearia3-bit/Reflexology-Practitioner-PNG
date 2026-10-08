@@ -1,1199 +1,684 @@
 /* =====================================================
-   REFLEXOLOGY PRACTITIONER PNG
-   MAIN WEBSITE STYLES
-   Light Blue Wellness Theme
+JOSEPH ARIA REFLEXOLOGY
+REFLEXOLOGY PRACTITIONER PNG
+80/20 WEBSITE DESIGN
 ===================================================== */
-
 
 /* =====================================================
-   BASIC RESET
-===================================================== */
+
+1. RESET
+   ===================================================== */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
 
 html {
-    scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
-
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #ffffff;
-    color: #365563;
-    line-height: 1.7;
+font-family: Arial, Helvetica, sans-serif;
+background: #ffffff;
+color: #365563;
+line-height: 1.7;
 }
 
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+a {
+color: inherit;
+}
+
+button,
+input,
+textarea {
+font: inherit;
+}
 
 /* =====================================================
-   CONTAINER
+2. CONTAINER
 ===================================================== */
 
 .container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+width: 90%;
+max-width: 1100px;
+margin: 0 auto;
 }
 
-
 /* =====================================================
-   HEADER
+3. HEADER
 ===================================================== */
 
 header {
-    background: #dff3fa;
-    border-bottom: 1px solid #b9dce8;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+position: sticky;
+top: 0;
+z-index: 1000;
 
+background: #dff3fa;
+
+border-bottom: 1px solid #b9dce8;
+
+}
 
 header .container {
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+min-height: 76px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+gap: 20px;
+
 }
 
-
 /* =====================================================
-   LOGO
+4. LOGO
 ===================================================== */
 
 .logo {
-    line-height: 1.1;
+line-height: 1.1;
 }
-
 
 .logo h2 {
-    color: #24566b;
-    font-size: 1.35rem;
-    margin-bottom: 3px;
-}
+color: #24566b;
 
+font-size: 1.35rem;
+
+margin-bottom: 4px;
+
+}
 
 .logo span {
-    color: #5baecb;
-    font-size: 0.8rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+color: #5baecb;
+
+font-size: 0.78rem;
+
+font-weight: bold;
+
+letter-spacing: 1.5px;
+
 }
 
+/* =====================================================
+5. MOBILE MENU BUTTON
+===================================================== */
+
+.menu-toggle {
+display: none;
+
+border: none;
+background: transparent;
+
+color: #24566b;
+
+font-size: 30px;
+
+cursor: pointer;
+
+padding: 5px;
+
+}
 
 /* =====================================================
-   NAVIGATION
+6. NAVIGATION
 ===================================================== */
 
 nav {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-}
+display: flex;
 
+align-items: center;
+
+gap: 20px;
+
+}
 
 nav a {
-    color: #24566b;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: 0.3s ease;
-}
+color: #24566b;
 
+text-decoration: none;
+
+font-size: 0.94rem;
+
+font-weight: 600;
+
+padding: 8px 0;
+
+transition: color 0.25s ease;
+
+}
 
 nav a:hover {
-    color: #5baecb;
+color: #d1a52c;
 }
 
-
 /* =====================================================
-   HERO
+7. HERO — THE FIRST 20%
 ===================================================== */
 
 .hero {
-    background: linear-gradient(
-        135deg,
-        #dff3fa,
-        #f8fcfd
-    );
+min-height: 72vh;
 
-    padding: 100px 0;
-    text-align: center;
-}
+display: flex;
+align-items: center;
 
+text-align: center;
 
-.hero h1 {
-    max-width: 850px;
-    margin: 15px auto 20px;
-    color: #24566b;
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    line-height: 1.2;
-}
-
-
-.hero p {
-    max-width: 700px;
-    margin: 0 auto 25px;
-    font-size: 1.1rem;
-    color: #54727e;
-}
-
-
-/* =====================================================
-   EYEBROW TEXT
-===================================================== */
-
-.eyebrow {
-    color: #5baecb;
-    font-size: 0.8rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-
-/* =====================================================
-   SECTIONS
-===================================================== */
-
-section {
-    padding: 80px 0;
-}
-
-
-section h2 {
-    color: #24566b;
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    margin-bottom: 25px;
-}
-
-
-section p {
-    max-width: 850px;
-    margin-bottom: 18px;
-}
-
-
-.light-section {
-    background: #eef9fc;
-}
-
-
-/* =====================================================
-   BUTTONS
-===================================================== */
-
-.btn {
-    display: inline-block;
-
-    background: #5baecb;
-    color: #ffffff;
-
-    padding: 13px 25px;
-
-    border-radius: 8px;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    border: 2px solid #5baecb;
-
-    cursor: pointer;
-
-    transition: all 0.3s ease;
-}
-
-
-.btn:hover {
-    background: #24566b;
-    border-color: #24566b;
-    transform: translateY(-2px);
-}
-
-
-.secondary-btn {
-    background: transparent;
-    color: #24566b;
-    border-color: #7fc3da;
-}
-
-
-.secondary-btn:hover {
-    color: #ffffff;
-}
-
-
-/* =====================================================
-   HERO BUTTONS
-===================================================== */
-
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-
-/* =====================================================
-   SERVICES
-===================================================== */
-
-.services-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 25px;
-
-    margin-top: 35px;
-}
-
-
-.service-card {
-    background: #ffffff;
-
-    border: 1px solid #c8e5ee;
-
-    border-radius: 12px;
-
-    padding: 30px;
-
-    box-shadow:
-        0 5px 20px rgba(91, 174, 203, 0.08);
-
-    transition: 0.3s ease;
-}
-
-
-.service-card:hover {
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 10px 25px rgba(91, 174, 203, 0.15);
-}
-
-
-.service-card h3 {
-    color: #24566b;
-    margin-bottom: 15px;
-    font-size: 1.3rem;
-}
-
-
-.service-card p {
-    color: #5c747d;
-}
-
-
-/* =====================================================
-   CONTACT AREA
-===================================================== */
-
-#contact {
-    background: #f8fcfd;
-}
-
-
-#contact .btn {
-    margin-top: 10px;
-}
-
-
-/* =====================================================
-   CONTACT FORM
-===================================================== */
-
-form {
-    max-width: 700px;
-    margin-top: 30px;
-}
-
-
-form label {
-    display: block;
-
-     display: none;
-
-  border: none;
-  background: transparent;
-
-  color: #24566b;
-
-  font-size: 30px;
-
-  cursor: pointer;
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-  min-height: 82vh;
-
-  display: flex;
-  align-items: center;
-
-  text-align: center;
-
-  background:
+background:
     linear-gradient(
-      rgba(223, 243, 250, 0.92),
-      rgba(245, 252, 254, 0.96)
+        135deg,
+        #dff3fa 0%,
+        #f8fcfd 100%
     );
 
-  border-bottom: 1px solid #cde9f2;
+border-bottom: 1px solid #cde9f2;
+
+padding: 90px 0;
+
 }
 
-.hero-content {
-  padding: 90px 0;
-}
-
-.small-title {
-  color: #4b8ca6;
-
-  font-size: 13px;
-  font-weight: bold;
-
-  letter-spacing: 3px;
-
-  margin-bottom: 20px;
+.hero .container {
+max-width: 950px;
 }
 
 .hero h1 {
-  max-width: 900px;
+max-width: 900px;
 
-  margin: 0 auto 25px;
+margin: 16px auto 25px;
 
-  color: #24566b;
+color: #24566b;
 
-  font-size: clamp(40px, 8vw, 68px);
+font-size: clamp(2.4rem, 7vw, 4.3rem);
 
-  line-height: 1.08;
+line-height: 1.08;
 
-  letter-spacing: -1px;
+letter-spacing: -1.5px;
+
 }
 
-.hero h1 span {
-  display: block;
+.hero p:not(.section-label) {
+max-width: 720px;
 
-  margin-top: 8px;
+margin: 0 auto 30px;
 
-  color: #4b9fbd;
+color: #4d6975;
+
+font-size: 1.08rem;
+
 }
 
-.hero-text {
-  max-width: 720px;
+/* =====================================================
+8. SECTION LABEL
+===================================================== */
 
-  margin: 0 auto;
+.section-label {
+color: #5baecb;
 
-  color: #46616e;
+font-size: 0.76rem;
 
-  font-size: 18px;
+font-weight: bold;
 
-  line-height: 1.8;
+letter-spacing: 2.5px;
+
+text-transform: uppercase;
+
+margin-bottom: 14px;
+
 }
 
-
-/* =========================
-   HERO BUTTONS
-========================= */
+/* =====================================================
+9. HERO BUTTONS
+===================================================== */
 
 .hero-buttons {
-  margin-top: 35px;
+display: flex;
 
-  display: flex;
+justify-content: center;
+align-items: center;
 
-  justify-content: center;
-  align-items: center;
+gap: 14px;
 
-  gap: 15px;
+flex-wrap: wrap;
 
-  flex-wrap: wrap;
+margin-top: 28px;
+
 }
 
-
-/* =========================
-   BUTTONS
-========================= */
+/* =====================================================
+10. BUTTON SYSTEM
+===================================================== */
 
 .button {
-  display: inline-block;
+display: inline-block;
 
-  padding: 14px 27px;
+padding: 14px 25px;
 
-  border-radius: 8px;
+border-radius: 8px;
 
-  text-decoration: none;
+text-decoration: none;
 
-  font-size: 15px;
+font-size: 15px;
 
-  font-weight: bold;
+font-weight: bold;
 
-  cursor: pointer;
+border: 2px solid transparent;
 
-  transition: 0.2s ease;
-}
+cursor: pointer;
 
-.primary {
-  background: #5baecb;
+transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 
-  color: white;
-
-  box-shadow:
-    0 5px 15px rgba(91, 174, 203, 0.25);
-}
-
-.secondary {
-  background: white;
-
-  color: #397d96;
-
-  border: 2px solid #7fc3da;
 }
 
 .button:hover {
-  transform: translateY(-2px);
-
-  opacity: 0.85;
+transform: translateY(-2px);
 }
 
+.primary {
+background: #5baecb;
 
-/* =========================
-   SECTIONS
-========================= */
+color: #ffffff;
+
+border-color: #5baecb;
+
+box-shadow:
+    0 5px 15px rgba(91, 174, 203, 0.20);
+
+}
+
+.primary:hover {
+background: #24566b;
+
+border-color: #24566b;
+
+}
+
+.secondary {
+background: transparent;
+
+color: #24566b;
+
+border-color: #7fc3da;
+
+}
+
+.secondary:hover {
+background: #24566b;
+
+color: #ffffff;
+
+border-color: #24566b;
+
+}
+
+/* =====================================================
+11. GENERAL SECTIONS
+===================================================== */
 
 .section {
-  padding: 90px 0;
-}
-
-.section-label {
-  color: #5baecb;
-
-  font-size: 12px;
-
-  font-weight: bold;
-
-  letter-spacing: 3px;
-
-  margin-bottom: 15px;
+padding: 80px 0;
 }
 
 .section h2 {
-  max-width: 850px;
+max-width: 850px;
 
-  color: #24566b;
+color: #24566b;
 
-  font-size: clamp(32px, 6vw, 48px);
+font-size: clamp(2rem, 5vw, 3rem);
 
-  line-height: 1.2;
+line-height: 1.2;
 
-  margin-bottom: 30px;
+margin-bottom: 25px;
+
 }
 
 .section p {
-  max-width: 820px;
+max-width: 820px;
 
-  margin-bottom: 18px;
+color: #46616e;
 
-  color: #46616e;
+font-size: 16px;
 
-  font-size: 16px;
+margin-bottom: 18px;
+
 }
 
-
-/* =========================
-   ALTERNATING SECTIONS
-========================= */
+/* =====================================================
+12. ALTERNATING SECTIONS
+===================================================== */
 
 .journey-section,
 .wellness-section {
-  background: #eef9fc;
+background: #eef9fc;
 }
 
-
-/* =========================
-   SERVICES
-========================= */
+/* =====================================================
+13. SERVICES
+===================================================== */
 
 .service-grid {
-  display: grid;
+display: grid;
 
-  grid-template-columns:
-    repeat(3, 1fr);
+grid-template-columns: repeat(3, 1fr);
 
-  gap: 25px;
+gap: 24px;
 
-  margin-top: 40px;
+margin-top: 38px;
+
 }
 
 .service-card {
-  background: #ffffff;
+background: #ffffff;
 
-  border: 1px solid #cce8f0;
+border: 1px solid #cce8f0;
 
-  border-radius: 12px;
+border-radius: 14px;
 
-  padding: 32px;
+padding: 30px;
 
-  box-shadow:
-    0 5px 20px rgba(80, 150, 175, 0.10);
+box-shadow:
+    0 6px 22px rgba(80, 150, 175, 0.09);
 
-  transition: 0.2s ease;
+transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
+transform: translateY(-5px);
 
-  box-shadow:
-    0 10px 30px rgba(80, 150, 175, 0.16);
+box-shadow:
+    0 12px 30px rgba(80, 150, 175, 0.15);
+
 }
 
 .service-icon {
-  font-size: 38px;
+font-size: 38px;
 
-  margin-bottom: 18px;
+margin-bottom: 16px;
+
 }
 
 .service-card h3 {
-  color: #2c718a;
+color: #2c718a;
 
-  font-size: 22px;
+font-size: 1.3rem;
 
-  margin-bottom: 12px;
+margin-bottom: 12px;
+
 }
 
 .service-card p {
-  color: #55717d;
+color: #55717d;
 
-  font-size: 15px;
+font-size: 15px;
+
+margin-bottom: 0;
+
 }
 
-
-/* =========================
-   WELLNESS NOTICE
-========================= */
+/* =====================================================
+14. WELLNESS NOTICE
+===================================================== */
 
 .notice {
-  max-width: 820px;
+max-width: 820px;
 
-  margin-top: 30px;
+margin-top: 28px;
 
-  padding: 25px;
+padding: 24px;
 
-  background: #ffffff;
+background: #ffffff;
 
-  border-left: 5px solid #7fc3da;
+border-left: 5px solid #f2c94c;
 
-  border-radius: 7px;
+border-radius: 8px;
 
-  box-shadow:
-    0 4px 15px rgba(80, 150, 175, 0.08);
+box-shadow:
+    0 5px 18px rgba(80, 150, 175, 0.08);
+
 }
 
 .notice strong {
-  display: block;
+display: block;
 
-  color: #2c718a;
+color: #24566b;
 
-  margin-bottom: 8px;
+font-size: 17px;
 
-  font-size: 17px;
+margin-bottom: 8px;
+
 }
 
+.notice p {
+margin-bottom: 0;
+}
 
-/* =========================
-   TESTIMONIAL
-========================= */
+/* =====================================================
+15. TESTIMONIALS
+===================================================== */
 
 .testimonial {
-  max-width: 760px;
+max-width: 760px;
 
-  margin-top: 35px;
+margin-top: 30px;
 
-  padding: 35px;
+padding: 30px;
 
-  background: #eef9fc;
+background: #eef9fc;
 
-  border-radius: 12px;
+border: 1px solid #cce8f0;
 
-  border: 1px solid #cce8f0;
+border-radius: 12px;
+
 }
 
 .testimonial p {
-  color: #46616e;
+font-size: 17px;
 
-  font-size: 18px;
+font-style: italic;
 
-  font-style: italic;
 }
 
 .testimonial strong {
-  display: block;
+display: block;
 
-  color: #2c718a;
+color: #2c718a;
 
-  margin-top: 15px;
+margin-top: 12px;
+
 }
 
+/* =====================================================
+16. CONTACT
+===================================================== */
 
-/* =========================
-   CONTACT
-========================= */
+#contact {
+background: #f8fcfd;
+}
 
 .contact-section {
-  background: #f8fcfd;
+border-top: 1px solid #e1f0f4;
 }
 
 #contactForm {
-  max-width: 720px;
+max-width: 700px;
 
-  margin-top: 35px;
+margin-top: 30px;
+
 }
 
 #contactForm label {
-  display: block;
+display: block;
 
-  color: #365d6c;
+color: #365d6c;
 
-  margin: 18px 0 7px;
+margin: 17px 0 7px;
 
-  font-weight: bold;
+font-size: 15px;
 
-  font-size: 15px;
+font-weight: bold;
+
 }
 
 #contactForm input,
 #contactForm textarea {
-  width: 100%;
+width: 100%;
 
-  padding: 15px;
+padding: 14px 15px;
 
-  border: 1px solid #b9dce7;
+border: 1px solid #b9dce7;
 
-  border-radius: 7px;
+border-radius: 7px;
 
-  background: white;
+background: #ffffff;
 
-  color: #29404f;
+color: #29404f;
 
-  font-family: inherit;
+font-size: 16px;
 
-  font-size: 16px;
+outline: none;
 
-  outline: none;
+transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+
 }
 
 #contactForm input:focus,
 #contactForm textarea:focus {
-  border-color: #5baecb;
+border-color: #5baecb;
 
-  box-shadow:
+box-shadow:
     0 0 0 3px rgba(91, 174, 203, 0.12);
+
 }
 
 #contactForm textarea {
-  resize: vertical;
+resize: vertical;
 
-  min-height: 140px;
+min-height: 140px;
+
 }
 
 #contactForm button {
-  margin-top: 22px;
+margin-top: 20px;
 }
 
 #formMessage {
-  margin-top: 20px;
+margin-top: 18px;
 
-  color: #397d96;
+color: #397d96;
 
-  font-weight: bold;
+font-weight: bold;
+
 }
 
-
-/* =========================
-   FOOTER
-========================= */
+/* =====================================================
+17. FOOTER
+===================================================== */
 
 footer {
-  background: #dff3fa;
+background: #24566b;
 
-  color: #24566b;
+color: #ffffff;
 
-  text-align: center;
+text-align: center;
 
-  padding: 55px 0;
+padding: 50px 0;
 
-  border-top: 1px solid #cce8f0;
+border-top: 4px solid #f2c94c;
+
 }
 
 footer h3 {
-  color: #24566b;
+color: #ffffff;
 
-  font-size: 20px;
+font-size: 20px;
 
-  letter-spacing: 1px;
+letter-spacing: 1px;
 
-  margin-bottom: 10px;
+margin-bottom: 10px;
+
 }
 
 footer p {
-  color: #527482;
+color: #d9edf3;
 
-  margin: 5px auto;
+margin: 5px auto;
 
-  font-size: 14px;
+font-size: 14px;
+
 }
 
 .copyright {
-  margin-top: 25px !important;
+margin-top: 24px !important;
 
-  color: #6c8994 !important;
+color: #b9dce8 !important;
 
-  font-size: 12px !important;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-  .nav-container {
-    min-height: 65px;
-  }
-
-  .menu-button {
-    display: block;
-  }
-
-  nav {
-    display: none;
-
-    position: absolute;
-
-    top: 65px;
-    left: 0;
-
-    width: 100%;
-
-    background: #dff3fa;
-
-    flex-direction: column;
-
-    align-items: stretch;
-
-    gap: 0;
-
-    padding: 10px 0;
-
-    box-shadow:
-      0 5px 15px rgba(80, 150, 175, 0.15);
-  }
-
-  nav.active {
-    display: flex;
-  }
-
-  nav a {
-    padding: 15px 5%;
-
-    color: #24566b;
-
-    border-bottom: 1px solid #cce8f0;
-  }
-
-  .hero {
-    min-height: 75vh;
-  }
-
-  .hero-content {
-    padding: 70px 0;
-  }
-
-  .hero h1 {
-    font-size: 42px;
-  }
-
-  .hero-text {
-    font-size: 16px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-
-    align-items: stretch;
-  }
-
-  .hero-buttons .button {
-    text-align: center;
-  }
-
-  .section {
-    padding: 65px 0;
-  }
-
-  .section h2 {
-    font-size: 34px;
-  }
-
-  .service-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .service-card {
-    padding: 27px;
-  }
-
-  .notice {
-    padding: 20px;
-  }
-
-  .testimonial {
-    padding: 25px;
-  }
+font-size: 12px !important;
 
 }
 
+/* =====================================================
+18. ACCESSIBILITY
+===================================================== */
 
-/* =========================
-   SMALL PHONES
-========================= */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+outline: 3px solid #f2c94c;
 
-@media (max-width: 400px) {
+outline-offset: 3px;
 
-  .container {
-    width: 92%;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .logo {
-    font-size: 16px;
-  }
-
-   }}
-
-.hero h1 span {
-  display: block;
 }
 
-.hero-text {
-  max-width: 700px;
-  margin: auto;
-  font-size: 18px;
-}
-
-.hero-buttons {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-
-/* =========================
-   BUTTONS
-========================= */
-
-.button {
-  display: inline-block;
-  padding: 14px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.primary {
-  background: #111111;
-  color: white;
-}
-
-.secondary {
-  border: 2px solid #111111;
-  color: #111111;
-  background: transparent;
-}
-
-.button:hover {
-  opacity: 0.8;
-}
-
-
-/* =========================
-   SECTIONS
-========================= */
-
-.section {
-  padding: 80px 0;
-}
-
-.section h2 {
-  font-size: clamp(30px, 6vw, 45px);
-  margin-bottom: 25px;
-  line-height: 1.2;
-}
-
-.section p {
-  max-width: 800px;
-  margin-bottom: 18px;
-}
-
-.journey-section,
-.wellness-section {
-  background: #f4f1ea;
-}
-
-
-/* =========================
-   SERVICES
-========================= */
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-top: 35px;
-}
-
-.service-card {
-  border: 1px solid #dddddd;
-  padding: 30px;
-  border-radius: 10px;
-  background: white;
-}
-
-.service-icon {
-  font-size: 35px;
-  margin-bottom: 15px;
-}
-
-.service-card h3 {
-  margin-bottom: 10px;
-}
-
-
-/* =========================
-   NOTICE
-========================= */
-
-.notice {
-  max-width: 800px;
-  margin-top: 30px;
-  padding: 20px;
-  border-left: 5px solid #111111;
-  background: white;
-}
-
-
-/* =========================
-   TESTIMONIAL
-========================= */
-
-.testimonial {
-  margin-top: 30px;
-  padding: 30px;
-  border-radius: 10px;
-  background: #f4f1ea;
-  max-width: 750px;
-}
-
-.testimonial strong {
-  display: block;
-  margin-top: 15px;
-}
-
-
-/* =========================
-   CONTACT FORM
-========================= */
-
-#contactForm {
-  max-width: 700px;
-  margin-top: 30px;
-}
-
-#contactForm label {
-  display: block;
-  margin: 15px 0 5px;
-  font-weight: bold;
-}
-
-#contactForm input,
-#contactForm textarea {
-  width: 100%;
-  padding: 14px;
-  border: 1px solid #cccccc;
-  border-radius: 6px;
-  font-size: 16px;
-  font-family: inherit;
-}
-
-#contactForm textarea {
-  resize: vertical;
-}
-
-#contactForm button {
-  margin-top: 20px;
-}
-
-#formMessage {
-  margin-top: 20px;
-  font-weight: bold;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-  background: #111111;
-  color: white;
-  text-align: center;
-  padding: 45px 0;
-}
-
-footer p {
-  margin: 5px auto;
-}
-
-.copyright {
-  margin-top: 25px !important;
-  font-size: 13px;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-  .menu-button {
-    display: block;
-  }
-
-  nav {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: #111111;
-    flex-direction: column;
-    padding: 20px;
-    gap: 0;
-  }
-
-  nav.active {
-    display: flex;
-  }
-
-  nav a {
-    padding: 14px 5%;
-    border-bottom: 1px solid #333333;
-  }
-
-  .hero {
-    min-height: 75vh;
-  }
-
-  .section {
-    padding: 60px 0;
-  }
-
-  .service-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .hero-buttons .button {
-    text-align: center;
-  }
-
-}    z-index: 1000;
-
-    background-color: var(--white);
-
-    border-bottom: 1px solid var(--border);
-
-    padding: 12px 20px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-}
-
-
-/* LOGO */
-
-.logo h2 {
-
-    margin: 0;
-
-    font-size: 21px;
-
-    color: var(--green);
-}
-
-.logo p {
-
-    margin: 0;
-
-    font-size: 10px;
-
-    letter-spacing: 3px;
-
-    color: var(--earth);
-
-    font-weight: bold;
-}
-
-
-/* MENU BUTTON */
-
-#menuButton {
-
-    background: none;
-
-    border: none;
-
-    font-size: 28px;
-
-    color: var(--green);
-
-    cursor: pointer;
-}
-
-
-/* NAVIGATION */
+/* =====================================================
+19. TABLET
+===================================================== */
+
+@media (max-width: 900px) {
 
 nav {
+    gap: 13px;
+}
 
+nav a {
+    font-size: 0.88rem;
+}
+
+.service-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+/* =====================================================
+20. MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+header .container {
+    min-height: 68px;
+}
+
+.menu-toggle {
+    display: block;
+}
+
+nav {
     display: none;
 
     position: absolute;
@@ -1204,829 +689,147 @@ nav {
 
     width: 100%;
 
-    background-color: white;
+    background: #dff3fa;
 
-    padding: 20px;
+    flex-direction: column;
 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    align-items: stretch;
+
+    gap: 0;
+
+    padding: 8px 5%;
+
+    border-bottom: 1px solid #b9dce8;
+
+    box-shadow:
+        0 8px 20px rgba(36, 86, 107, 0.10);
 }
 
+nav.active,
 nav.show {
-
-    display: block;
+    display: flex;
 }
 
 nav a {
+    padding: 14px 0;
 
-    display: block;
+    border-bottom: 1px solid #cce8f0;
 
-    padding: 12px 0;
-
-    color: var(--green);
-
-    font-weight: bold;
+    font-size: 15px;
 }
 
-nav a:hover {
-
-    color: var(--gold);
+nav a:last-child {
+    border-bottom: none;
 }
-
-
-/* BOOK BUTTON */
-
-.book-button {
-
-    background-color: var(--green);
-
-    color: white !important;
-
-    padding: 12px 18px !important;
-
-    border-radius: 30px;
-
-    text-align: center;
-
-    margin-top: 8px;
-}
-
-
-/* =========================================
-   5. HERO
-   ========================================= */
 
 .hero {
+    min-height: 75vh;
 
-    background-color: var(--cream);
-
-    padding: 50px 20px;
-
-    display: flex;
-
-    flex-direction: column;
+    padding: 70px 0;
 }
-
-
-/* HERO CONTENT */
-
-.hero-content {
-
-    order: 1;
-}
-
-.small-heading {
-
-    color: var(--earth);
-
-    font-size: 13px;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
-}
-
 
 .hero h1 {
+    font-size: clamp(2.25rem, 11vw, 3.5rem);
 
-    font-size: 44px;
-
-    color: var(--green);
-
-    margin-bottom: 20px;
+    letter-spacing: -1px;
 }
 
-
-.hero-text {
-
-    font-size: 18px;
-
-    max-width: 600px;
+.hero p:not(.section-label) {
+    font-size: 1rem;
 }
-
-
-/* HERO BUTTONS */
 
 .hero-buttons {
-
-    display: flex;
-
     flex-direction: column;
 
-    gap: 12px;
+    align-items: stretch;
 
-    margin-top: 25px;
-}
-
-
-.primary-button,
-.secondary-button {
-
-    display: inline-block;
-
-    padding: 14px 22px;
-
-    border-radius: 30px;
-
-    font-weight: bold;
-
-    text-align: center;
-}
-
-
-.primary-button {
-
-    background-color: var(--green);
-
-    color: white;
-}
-
-
-.secondary-button {
-
-    background-color: white;
-
-    color: var(--green);
-
-    border: 1px solid var(--green);
-}
-
-
-.primary-button:hover {
-
-    background-color: #143a2d;
-}
-
-
-.secondary-button:hover {
-
-    background-color: var(--light-green);
-}
-
-
-.trust {
-
-    font-size: 13px;
-
-    color: var(--green);
-
-    margin-top: 25px;
-
-    font-weight: bold;
-}
-
-
-/* HERO IMAGE */
-
-.hero-image {
-
-    order: 2;
-
-    margin-top: 35px;
-}
-
-
-.image-placeholder {
-
-    min-height: 330px;
-
-    border-radius: 25px;
-
-    background:
-
-        linear-gradient(
-            135deg,
-            #dce8de,
-            #eee5d5
-        );
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-    text-align: center;
-
-    padding: 30px;
-
-    color: #63766a;
-
-    border: 1px dashed #9daf9f;
-}
-
-
-/* =========================================
-   6. GENERAL SECTIONS
-   ========================================= */
-
-.section {
-
-    padding: 65px 20px;
-
-    max-width: 1200px;
-
-    margin: auto;
-}
-
-
-.section-heading {
-
-    margin-bottom: 35px;
-
-    max-width: 700px;
-}
-
-
-/* =========================================
-   7. INTRODUCTION
-   ========================================= */
-
-.introduction {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 25px;
-}
-
-
-.text-link {
-
-    color: var(--green);
-
-    font-weight: bold;
-}
-
-
-/* =========================================
-   8. SERVICES
-   ========================================= */
-
-.services {
-
-    background-color: #f4f6f1;
-
-    max-width: none;
-}
-
-
-.service-grid {
-
-    display: grid;
-
-    grid-template-columns: 1fr;
-
-    gap: 20px;
-
-    max-width: 1200px;
-
-    margin: auto;
-}
-
-
-.service-card {
-
-    background-color: white;
-
-    padding: 30px;
-
-    border-radius: 20px;
-
-    border: 1px solid var(--border);
-
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.06);
-}
-
-
-.service-card span {
-
-    color: var(--gold);
-
-    font-weight: bold;
-
-    font-size: 14px;
-}
-
-
-.service-card h3 {
-
-    margin-top: 12px;
-}
-
-
-.service-card a {
-
-    color: var(--green);
-
-    font-weight: bold;
-
-    font-size: 14px;
-}
-
-
-/* =========================================
-   9. WELLNESS
-   ========================================= */
-
-.wellness {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 35px;
-}
-
-
-.wellness-image {
-
-    min-height: 350px;
-}
-
-
-.wellness-content ul {
-
-    padding-left: 20px;
-
-    color: var(--grey);
-}
-
-
-.wellness-content li {
-
-    margin-bottom: 8px;
-}
-
-
-/* IMPORTANT NOTICE */
-
-.notice {
-
-    background-color: #fff7e5;
-
-    border-left: 5px solid var(--gold);
-
-    padding: 18px;
-
-    margin: 25px 0;
-
-    border-radius: 8px;
-}
-
-
-.notice strong {
-
-    color: var(--green);
-}
-
-
-/* =========================================
-   10. FEATURES
-   ========================================= */
-
-.feature-grid {
-
-    display: grid;
-
-    grid-template-columns: 1fr;
-
-    gap: 25px;
-}
-
-
-.feature {
-
-    border-top: 1px solid var(--border);
-
-    padding-top: 20px;
-}
-
-
-/* =========================================
-   11. JOURNEY
-   ========================================= */
-
-.journey {
-
-    background-color: var(--green);
-
-    padding: 70px 20px;
-
-    color: white;
-}
-
-
-.journey h2 {
-
-    color: white;
-
-    max-width: 750px;
-}
-
-
-.journey p {
-
-    color: #e0ebe4;
-
-    max-width: 700px;
-}
-
-
-/* =========================================
-   12. PHILOSOPHY
-   ========================================= */
-
-.philosophy {
-
-    text-align: center;
-}
-
-
-.philosophy p {
-
-    max-width: 700px;
+    max-width: 360px;
 
     margin-left: auto;
 
     margin-right: auto;
 }
 
-
-.values {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    gap: 10px;
-
-    margin-top: 25px;
-}
-
-
-.values span {
-
-    background-color: var(--light-green);
-
-    color: var(--green);
-
-    padding: 9px 16px;
-
-    border-radius: 30px;
-
-    font-weight: bold;
-
-    font-size: 14px;
-}
-
-
-/* =========================================
-   13. BOOKING CTA
-   ========================================= */
-
-.booking-cta {
-
-    background-color: var(--cream);
-
+.hero-buttons .button {
     text-align: center;
 
-    padding: 70px 20px;
+    width: 100%;
 }
 
-
-.booking-cta p {
-
-    margin-bottom: 25px;
+.section {
+    padding: 65px 0;
 }
 
-
-/* =========================================
-   14. WHATSAPP
-   ========================================= */
-
-.whatsapp {
-
-    position: fixed;
-
-    right: 18px;
-
-    bottom: 18px;
-
-    width: 60px;
-
-    height: 60px;
-
-    border-radius: 50%;
-
-    background-color: #168c4b;
-
-    color: white;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 11px;
-
-    font-weight: bold;
-
-    z-index: 2000;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.2);
+.section h2 {
+    font-size: 2.1rem;
 }
 
+.service-grid {
+    grid-template-columns: 1fr;
 
-/* =========================================
-   15. FOOTER
-   ========================================= */
+    gap: 18px;
+}
+
+.service-card {
+    padding: 26px;
+}
+
+.notice {
+    padding: 20px;
+}
+
+.testimonial {
+    padding: 25px;
+}
 
 footer {
-
-    background-color: #132e24;
-
-    color: white;
-
-    padding: 50px 20px;
-
-    text-align: center;
+    padding: 45px 0;
 }
-
-
-footer h3 {
-
-    color: white;
-}
-
-
-footer p {
-
-    color: #c8d5ce;
-}
-
-
-.footer-links {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 10px;
-
-    margin: 25px 0;
-}
-
-
-.footer-links a {
-
-    color: #dce8e1;
-}
-
-
-.footer-links a:hover {
-
-    color: var(--gold);
-}
-
-
-.copyright {
-
-    border-top: 1px solid rgba(255,255,255,0.2);
-
-    padding-top: 20px;
-
-    margin-top: 25px;
-}
-
-
-.disclaimer {
-
-    font-size: 12px;
-
-    max-width: 700px;
-
-    margin: auto;
-}
-
-
-/* =========================================
-   16. TABLET
-   ========================================= */
-
-@media (width >= 700px) {
-
-    .hero {
-
-        padding: 70px 50px;
-    }
-
-
-    .hero h1 {
-
-        font-size: 55px;
-    }
-
-
-    .hero-buttons {
-
-        flex-direction: row;
-    }
-
-
-    .introduction {
-
-        display: grid;
-
-        grid-template-columns: 1fr 1fr;
-
-        gap: 60px;
-
-        align-items: center;
-    }
-
-
-    .service-grid {
-
-        grid-template-columns: 1fr 1fr;
-    }
-
-
-    .feature-grid {
-
-        grid-template-columns: 1fr 1fr;
-    }
-
-
-    .footer-links {
-
-        grid-template-columns:
-            repeat(4, 1fr);
-    }
 
 }
 
+/* =====================================================
+21. SMALL PHONES
+===================================================== */
 
-/* =========================================
-   17. DESKTOP
-   ========================================= */
+@media (max-width: 400px) {
 
-@media (width >= 1000px) {
+.container {
+    width: 92%;
+}
 
-    header {
+.logo h2 {
+    font-size: 1.15rem;
+}
 
-        padding: 15px 5%;
-    }
+.logo span {
+    font-size: 0.7rem;
+}
 
+.hero h1 {
+    font-size: 2.1rem;
+}
 
-    #menuButton {
-
-        display: none;
-    }
-
-
-    nav {
-
-        display: flex;
-
-        position: static;
-
-        width: auto;
-
-        padding: 0;
-
-        box-shadow: none;
-
-        align-items: center;
-
-        gap: 20px;
-    }
-
-
-    nav a {
-
-        padding: 5px 0;
-    }
-
-
-    .book-button {
-
-        padding: 10px 18px !important;
-
-        margin-top: 0;
-    }
-
-
-    .hero {
-
-        display: grid;
-
-        grid-template-columns:
-            1fr 1fr;
-
-        align-items: center;
-
-        gap: 60px;
-
-        min-height: 700px;
-
-        padding: 80px 7%;
-    }
-
-
-    .hero-image {
-
-        order: 2;
-
-        margin-top: 0;
-    }
-
-
-    .hero-content {
-
-        order: 1;
-    }
-
-
-    .hero h1 {
-
-        font-size: 64px;
-    }
-
-
-    .service-grid {
-
-        grid-template-columns:
-            repeat(4, 1fr);
-    }
-
-
-    .wellness {
-
-        display: grid;
-
-        grid-template-columns:
-            1fr 1fr;
-
-        align-items: center;
-
-        gap: 60px;
-    }
-
-
-    .feature-grid {
-
-        grid-template-columns:
-            repeat(3, 1fr);
-    }
-
-
-    .section {
-
-        padding-top: 90px;
-
-        padding-bottom: 90px;
-    }
-
-
-    .journey {
-
-        padding: 100px 7%;
-    }
+.section h2 {
+    font-size: 1.9rem;
+}
 
 }
 
-
-/* =========================================
-   18. ACCESSIBILITY
-   ========================================= */
-
-a:focus,
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-
-    outline: 3px solid var(--gold);
-
-    outline-offset: 3px;
-}
-
+/* =====================================================
+22. REDUCED MOTION
+===================================================== */
 
 @media (prefers-reduced-motion: reduce) {
 
-    html {
+html {
+    scroll-behavior: auto;
+}
 
-        scroll-behavior: auto;
-    }
+*,
+*::before,
+*::after {
+    transition: none !important;
+}
 
 }

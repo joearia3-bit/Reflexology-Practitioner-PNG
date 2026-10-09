@@ -44,34 +44,6 @@ navLinks.forEach(function (link) {
 
 
 /* =====================================================
-   CONTACT FORM
-===================================================== */
-
-const contactForm = document.getElementById("contactForm");
-const formMessage = document.getElementById("formMessage");
-
-if (contactForm) {
-
-    contactForm.addEventListener("submit", function (event) {
-
-        event.preventDefault();
-
-        if (formMessage) {
-
-            formMessage.textContent =
-                "Thank you for your enquiry. " +
-                "Joseph Aria will respond to you as soon as possible.";
-
-        }
-
-        contactForm.reset();
-
-    });
-
-}
-
-
-/* =====================================================
    CURRENT YEAR
 ===================================================== */
 
